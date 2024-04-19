@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+  --primary-color: #448afd;
+  --button: #3466ff;
+}
+
+#container {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--primary-color);
+  display: grid;
+  place-items: center;
+}
+
+#main {
+  width: 25vw;
+  background: white;
+  padding: 40px 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#main p {
+  margin: 20px 0px;
+  letter-spacing: 3px;
+}
+
+#main input {
+  width: 80%;
+  padding: 5px;
+  border-radius: 7px;
+}
+
+#main button {
+  padding: 10px 40px;
+  margin-top: 20px;
+  border-radius: 7px;
+  background-color: var(--button);
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  #main {
+    width: 90vw;
+  }
+
+  #main button {
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #main {
+    width: 50vw;
+  }
+
+  #main button {
+    padding: 10px 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  #main {
+    width: 40vw;
+  }
+
+  #main button {
+    padding: 10px 40px;
+  }
+}
